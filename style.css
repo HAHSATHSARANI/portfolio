@@ -7,9 +7,11 @@
   /*===== Colores =====*/
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
-  --hue-color: 224;
-  --first-color: hsl(var(--hue-color), 89%, 60%);
-  --second-color: hsl(var(--hue-color), 56%, 12%);
+  --hue-color: 195; /* Hue for light blue */
+  --first-color: hsl(var(--hue-color), 50%, 70%); /* Light blue color with some black mix */
+  --second-color: hsl(var(--hue-color), 56%, 12%); /* Adjust the second color if needed */
+  
+
   /*===== Fuente y tipografia =====*/
   --body-font: 'Poppins', sans-serif;
   --big-font-size: 2rem;
@@ -33,6 +35,12 @@
     --normal-font-size: 1rem;
     --smaller-font-size: .875rem;
   }
+}
+
+body {
+  background-image: url('../img/depositphotos_346643858-stock-illustration-banner-background-pastel-blue-low.jpg');
+  background-size: cover; /* This will make the image cover the entire viewport */
+  background-position: fix; /* This will center the image horizontally and vertically */
 }
 
 /*===== BASE =====*/
@@ -531,3 +539,32 @@ img {
     width: 450px;
   }
 }
+
+
+
+/* Center the work__item content */
+.work__item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Style the image within work__item */
+.work__img img {
+  max-width: 100%;
+}
+
+/* Style the text within work__item */
+.work__title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.work__text {
+  font-size: 15px;
+  margin: 0;
+}
+
